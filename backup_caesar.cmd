@@ -19,13 +19,17 @@ echo !!! Vytvarim snapshot v case: "%stamp%"
 echo ===
 echo ===
 echo ===
-md "C:\Documents and Settings\Uzivatel\Dokumenty\Dropbox\Zalohy_CEZAR\snapshot_%stamp%\"
+md "C:\Documents and Settings\Uzivatel\Dokumenty\Dropbox\Zalohy_CEZAR\snapshot_%stamp%\CEZAR\"
+md "C:\Documents and Settings\Uzivatel\Dokumenty\Dropbox\Zalohy_CEZAR\snapshot_%stamp%\CEZAR.OVR\"
+md "C:\Documents and Settings\Uzivatel\Dokumenty\Dropbox\Zalohy_CEZAR\snapshot_%stamp%\CEZAR.PRN\"
 echo !!! Zaloha bude ulozena zde: "C:\Documents and Settings\Uzivatel\Dokumenty\Dropbox\Zalohy_CEZAR\snapshot_%stamp%"
 echo ===
 echo ===
 echo ===
 echo !!! KOPIRUJI! NEVYPINAT!
-xcopy "C:\CEZAR\*" "C:\Documents and Settings\Uzivatel\Dokumenty\Dropbox\Zalohy_CEZAR\snapshot_%stamp%\" /s /i /Y
+xcopy "C:\CEZAR\*" "C:\Documents and Settings\Uzivatel\Dokumenty\Dropbox\Zalohy_CEZAR\snapshot_%stamp%\CEZAR\" /s /i /Y
+xcopy "C:\CEZAR.OVR\*" "C:\Documents and Settings\Uzivatel\Dokumenty\Dropbox\Zalohy_CEZAR\snapshot_%stamp%\CEZAR.OVR\" /s /i /Y
+xcopy "C:\CEZAR.PRN\*" "C:\Documents and Settings\Uzivatel\Dokumenty\Dropbox\Zalohy_CEZAR\snapshot_%stamp%\CEZAR.PRN\" /s /i /Y
 echo !!! KOPIROVANI DOKONCENO.
 echo ===
 echo ===
